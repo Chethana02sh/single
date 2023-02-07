@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.crm.genericUtilities.WebDriverUtility;
+
 public class CampaignPage {
 
 	@FindBy(id = "Campaigns_listView_basicAction_LBL_ADD_RECORD") private WebElement addCampaignbtn;
@@ -21,9 +23,10 @@ public class CampaignPage {
 	}
 	
 	
-	public void addCampaign()
+	public void addCampaign(WebDriverUtility wLib,WebDriver driver)
 	{
-		addCampaignbtn.click();
+		wLib.waitForElemenetToBeClickable(driver, addCampaignbtn);
+	//	addCampaignbtn.click();
 	}
 	
 	public void selectCampaign(WebDriver driver,Object campName)

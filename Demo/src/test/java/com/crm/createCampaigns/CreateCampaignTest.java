@@ -38,7 +38,7 @@ public class CreateCampaignTest extends BaseClass {
 		menuPage.getCampaignLink().click();
 
 		CampaignPage campaignPage = new CampaignPage(driver);
-		campaignPage.addCampaign();
+		campaignPage.addCampaign(wLib, driver);
 
 		AddCampaignPage addCampaignPage = new AddCampaignPage(driver);
 		addCampaignPage.campaignname(driver, CampaignName);
