@@ -23,10 +23,10 @@ public class CampaignPage {
 	}
 	
 	
-	public void addCampaign(WebDriverUtility wLib,WebDriver driver)
+	public void addCampaign(WebDriverUtility wLib) throws InterruptedException
 	{
-		wLib.waitForElemenetToBeClickable(driver, addCampaignbtn);
-	//	addCampaignbtn.click();
+	wLib.waitAndClick(addCampaignbtn);	
+	//addCampaignbtn.click();
 	}
 	
 	public void selectCampaign(WebDriver driver,Object campName)
