@@ -10,7 +10,7 @@ import com.crm.genericUtilities.WebDriverUtility;
 
 public class CampaignPage {
 
-	@FindBy(id = "Campaigns_listView_basicAction_LBL_ADD_RECORD") private WebElement addCampaignbtn;
+	@FindBy(xpath = "//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']") private WebElement addCampaignbtn;
 	
 	@FindBy(id = "Campaigns_listView_massAction_LBL_DELETE") private WebElement deleteBtnClick;
 	

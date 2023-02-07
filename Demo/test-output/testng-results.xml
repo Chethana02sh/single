@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Campaign is created]]>
+    </line>
+    <line>
+      <![CDATA[Campaign is edited]]>
+    </line>
+    <line>
+      <![CDATA[Campaign is deleted]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-07T21:39:01 IST" name="Default suite" finished-at="2023-02-07T21:39:35 IST" duration-ms="33088">
+    <groups>
+    </groups>
+    <test started-at="2023-02-07T21:39:01 IST" name="Default test" finished-at="2023-02-07T21:39:35 IST" duration-ms="33088">
+      <class name="com.crm.createCampaigns.CreateCampaignTest">
+        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:01 IST" name="dbConfig" finished-at="2023-02-07T21:39:01 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConfig -->
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:01 IST" name="launchTheBrowser" finished-at="2023-02-07T21:39:06 IST" duration-ms="4262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:06 IST" name="loginToAppln" finished-at="2023-02-07T21:39:09 IST" duration-ms="3339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="createCampaignTest()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:09 IST" name="createCampaignTest" finished-at="2023-02-07T21:39:33 IST" duration-ms="23534" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Campaign is created]]>
+            </line>
+            <line>
+              <![CDATA[Campaign is edited]]>
+            </line>
+            <line>
+              <![CDATA[Campaign is deleted]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCampaignTest -->
+        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:33 IST" name="logoutFromAppln" finished-at="2023-02-07T21:39:34 IST" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:34 IST" name="closeTheBrowser" finished-at="2023-02-07T21:39:35 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="closeDBconfig()[pri:0, instance:com.crm.createCampaigns.CreateCampaignTest@68c72235]" started-at="2023-02-07T21:39:35 IST" name="closeDBconfig" finished-at="2023-02-07T21:39:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBconfig -->
+      </class> <!-- com.crm.createCampaigns.CreateCampaignTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
