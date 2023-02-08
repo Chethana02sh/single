@@ -7,6 +7,7 @@ package com.crm.genericUtilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -53,10 +54,10 @@ public class BaseClass
 	//	String BROWSER = fLib.getPropertKeyValue("browser");
 	//	String URL = fLib.getPropertKeyValue("url1");
 
-		if(BROWSER.equalsIgnoreCase("firefox"))
+		if(BROWSER.equalsIgnoreCase("edge"))
 		{
-			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+			WebDriverManager.edgedriver().setup();
+			driver=new EdgeDriver();
 		}else if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			//	ChromeOptions chromeOptions=new ChromeOptions();
