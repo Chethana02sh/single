@@ -39,7 +39,7 @@ public class CreateCampaignTest extends BaseClass {
 
 //		CampaignPage campaignPage = new CampaignPage(driver);
 //		campaignPage.addCampaign(wLib);
-		
+		Thread.sleep(7000);
 		driver.findElement(By.xpath("//button[contains(.,'Add Campaign')]")).click();
 
 		AddCampaignPage addCampaignPage = new AddCampaignPage(driver);
