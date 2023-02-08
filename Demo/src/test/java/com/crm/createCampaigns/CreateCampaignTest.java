@@ -42,7 +42,7 @@ public class CreateCampaignTest extends BaseClass {
 //		CampaignPage campaignPage = new CampaignPage(driver);
 //		campaignPage.addCampaign(wLib);
 		Thread.sleep(10000);
-		WebElement ad = driver.findElement(By.xpath("//button[contains(.,'Add Campaign')]"));
+		WebElement ad = driver.findElement(By.xpath("//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']"));
 //		WebDriverWait wait = new WebDriverWait(driver,12);
 //		wait.until(ExpectedConditions.elementToBeClickable(ad)).click();
 		
