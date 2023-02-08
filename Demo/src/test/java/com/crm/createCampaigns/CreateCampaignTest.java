@@ -3,6 +3,8 @@ package com.crm.createCampaigns;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -39,8 +41,11 @@ public class CreateCampaignTest extends BaseClass {
 
 //		CampaignPage campaignPage = new CampaignPage(driver);
 //		campaignPage.addCampaign(wLib);
-		Thread.sleep(7000);
-		driver.findElement(By.xpath("//button[contains(.,'Add Campaign')]")).click();
+		
+		WebElement ad = driver.findElement(By.xpath("//button[contains(.,'Add Campaign')]"));
+		WebDriverWait wait = new WebDriverWait(driver,12);
+		wait.until(ExpectedConditions.elementToBeClickable(ad)).click();
+		
 
 		AddCampaignPage addCampaignPage = new AddCampaignPage(driver);
 		addCampaignPage.campaignname(driver, CampaignName);
