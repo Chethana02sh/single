@@ -37,8 +37,10 @@ public class CreateCampaignTest extends BaseClass {
 		MenuPage menuPage = new MenuPage(driver);
 		menuPage.getCampaignLink().click();
 
-		CampaignPage campaignPage = new CampaignPage(driver);
-		campaignPage.addCampaign(wLib);
+//		CampaignPage campaignPage = new CampaignPage(driver);
+//		campaignPage.addCampaign(wLib);
+		
+		driver.findElement(By.xpath("//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']")).click();
 
 		AddCampaignPage addCampaignPage = new AddCampaignPage(driver);
 		addCampaignPage.campaignname(driver, CampaignName);
